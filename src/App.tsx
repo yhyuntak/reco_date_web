@@ -6,7 +6,6 @@ import { Button } from './components/ui/button';
 
 function App() {
   const [count, setCount] = useState(0);
-
   return (
     <>
       <div>
@@ -17,13 +16,15 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <div className="text-3xl font-bold text-blue-900">Vite + React</div>
+      <div className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">
+        Vite + React
+      </div>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>count is {count}</button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
-        <div className="flex min-h-svh felx-col items-center justify-center">
+        <div className="felx-col flex min-h-svh items-center justify-center">
           <Button>Click me</Button>
         </div>
       </div>
